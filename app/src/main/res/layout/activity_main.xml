@@ -16,7 +16,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/menu_btm_navigation"
         app:itemIconTint="@color/white"
-        app:itemIconSize="@dimen/_25mdp"/>
+        app:itemIconSize="@dimen/_24mdp"/>
 
     <fragment
         android:id="@+id/fragment"
