@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="right"
+    tools:context=".view.FrItemSelected"
+    android:layout_marginBottom="56dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <com.daimajia.slider.library.SliderLayout
+        android:id="@+id/sliderLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150mdp"
+        android:layout_margin="@dimen/_8mdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView8"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30mdp"
+        android:layout_margin="@dimen/_8mdp"
+        android:orientation="horizontal"
+        app:cardBackgroundColor="@color/purple_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sliderLayout2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView26"
+                style="@style/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="رنگ های موجود :"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toStartOf="@+id/textView26"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="14dp">
+
+                <TextView
+                    android:id="@+id/txt_item_color4"
+                    style="@style/txt2"
+                    android:layout_width="@dimen/_25mdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/back_color_and_sizee"
+                    android:gravity="center"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/txt_item_color3"
+                    style="@style/txt2"
+                    android:layout_width="@dimen/_25mdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/back_color_and_sizee"
+                    android:gravity="center"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/txt_item_color2"
+                    style="@style/txt2"
+                    android:layout_width="@dimen/_25mdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/back_color_and_sizee"
+                    android:gravity="center"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/txt_item_color1"
+                    style="@style/txt2"
+                    android:layout_width="@dimen/_25mdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/back_color_and_sizee"
+                    android:gravity="center"
+                    android:text="TextView" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView11"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200mdp"
+        android:layout_margin="@dimen/_8mdp"
+        app:cardCornerRadius="@dimen/_5mdp"
+        app:cardElevation="@dimen/_5mdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView8">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView42"
+                style="@style/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="درباره محصول :"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_information_item"
+                style="@style/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView42" />
+
+            <TextView
+                android:id="@+id/textView44"
+                style="@style/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="سایز های موجود :"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_information_item" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25mdp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="@+id/textView44"
+                app:layout_constraintEnd_toStartOf="@+id/textView44"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView44">
+
+                <TextView
+                    android:id="@+id/txt_size_shose6"
+                    style="@style/txt2"
+                    android:layout_width="@dimen/_25mdp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/back_color_and_sizee"
+                    android:gravity="center"
+                    android:text="43" />
+
+                <TextView
+                    android:id="@+id/txt_size_shose5"
+                    style="@style/txt2"
+                    android:layout_width="@dimen/_25mdp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/back_color_and_sizee"
+                    android:gravity="center"
+                    android:text="42" />
+
+                <TextView
+                    android:id="@+id/txt_size_shose4"
+                    style="@style/txt2"
+                    android:layout_width="@dimen/_25mdp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/back_color_and_sizee"
+                    android:gravity="center"
+                    android:text="41" />
+
+                <TextView
+                    android:id="@+id/txt_size_shose3"
+                    style="@style/txt2"
+                    android:layout_width="@dimen/_25mdp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/back_color_and_sizee"
+                    android:gravity="center"
+                    android:text="40" />
+
+                <TextView
+                    android:id="@+id/txt_size_shose2"
+                    style="@style/txt2"
+                    android:layout_width="@dimen/_25mdp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/back_color_and_sizee"
+                    android:gravity="center"
+                    android:text="39" />
+
+                <TextView
+                    android:id="@+id/txt_size_shose1"
+                    style="@style/txt2"
+                    android:layout_width="@dimen/_25mdp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/back_color_and_sizee"
+                    android:gravity="center"
+                    android:text="38" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView52"
+                style="@style/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="قیمت :"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView44" />
+
+            <TextView
+                android:id="@+id/txt_item_price"
+                style="@style/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="390 هزارتومن"
+                app:layout_constraintEnd_toStartOf="@+id/textView52"
+                app:layout_constraintTop_toBottomOf="@+id/textView44" />
+
+            <TextView
+                android:id="@+id/textView54"
+                style="@style/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="تخفیف :"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView52" />
+
+            <TextView
+                android:id="@+id/txt_item_off"
+                style="@style/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10هزار تومن"
+                app:layout_constraintEnd_toStartOf="@+id/textView54"
+                app:layout_constraintTop_toBottomOf="@+id/txt_item_price" />
+
+            <TextView
+                android:id="@+id/textView56"
+                style="@style/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="هزینه ارسال :"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView54" />
+
+            <TextView
+                android:id="@+id/textView57"
+                style="@style/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20000"
+                app:layout_constraintEnd_toStartOf="@+id/textView56"
+                app:layout_constraintTop_toBottomOf="@+id/txt_item_off" />
+
+            <TextView
+                android:id="@+id/textView58"
+                style="@style/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="قیمت نهایی :"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView56" />
+
+            <TextView
+                android:id="@+id/txt_item_price_sum"
+                style="@style/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="380 هزار تومن"
+                app:layout_constraintEnd_toStartOf="@+id/textView58"
+                app:layout_constraintTop_toBottomOf="@+id/textView57" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView12"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30mdp"
+        android:layout_margin="@dimen/_8mdp"
+        app:cardBackgroundColor="@color/purple_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView11">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView61"
+                style="@style/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="نظرات کاربران"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_view_comment"
+                style="@style/txt2"
+                android:layout_width="@dimen/_80mdp"
+                android:layout_height="@dimen/_20mdp"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/back_color_and_size"
+                android:gravity="center"
+                android:text="دیدن همه نظرات"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100mdp"
+        android:layout_margin="@dimen/_8mdp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView12">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:cardCornerRadius="@dimen/_5mdp"
+            app:cardElevation="@dimen/_5mdp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txt_name_item_selcted2"
+                    style="@style/txt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txt_title_item_selcted2"
+                    style="@style/txt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_name_item_selcted2" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:cardCornerRadius="@dimen/_5mdp"
+            app:cardElevation="@dimen/_5mdp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txt_name_item_selcted1"
+                    style="@style/txt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txt_title_item_selcted1"
+                    style="@style/txt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_name_item_selcted1" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_56mdp"
+            android:layout_margin="@dimen/_8mdp"
+            app:cardCornerRadius="@dimen/_5mdp"
+            app:cardElevation="@dimen/_5mdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" >
+
+            <Button
+                android:id="@+id/buttonAddToBasket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/back_item_app"
+                android:fontFamily="@font/ordibehesht"
+                android:text=" افزودن به سبد خرید "
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_18font_mdp" />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

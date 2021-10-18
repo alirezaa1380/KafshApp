@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/imv_image_basket"
+            android:layout_width="@dimen/_125mdp"
+            android:layout_height="@dimen/_100mdp"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="@dimen/_8mdp"
+            android:layout_marginTop="@dimen/_8mdp"
+            android:layout_marginEnd="@dimen/_8mdp"
+            android:layout_marginBottom="@dimen/_8mdp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/nice" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100mdp"
+            android:layout_marginTop="@dimen/_8mdp"
+            android:layout_marginLeft="@dimen/_2mdp"
+            android:layout_toLeftOf="@id/imv_image_basket"
+            app:cardCornerRadius="@dimen/_5mdp"
+            app:cardElevation="@dimen/_3mdp">
+
+            <TextView
+                android:id="@+id/txt_title_basket"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:fontFamily="@font/ordibehesht"
+                android:gravity="right"
+                android:maxLines="3"
+                android:padding="@dimen/_4mdp"
+                android:text="کفش زنانه "
+                android:textColor="#000000"
+                android:textSize="@dimen/_12font_mdp" />
+
+            <TextView
+                android:id="@+id/textView0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="@dimen/_4mdp"
+                android:background="@drawable/back_item_app"
+                android:fontFamily="@font/ordibehesht"
+                android:padding="@dimen/_4mdp"
+                android:text="اطلاعات بیشتر"
+                android:textColor="#FFFFFF" />
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8mdp"
+        android:layout_marginRight="@dimen/_8mdp"
+        android:layout_marginBottom="@dimen/_8mdp"
+        android:layout_marginLeft="@dimen/_2mdp"
+        app:cardCornerRadius="@dimen/_5mdp"
+        app:cardElevation="@dimen/_3mdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView6"
+                style="@style/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="آدرس :"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_address_basket"
+                style="@style/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="خالی"
+                app:layout_constraintEnd_toStartOf="@+id/textView6"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView10"
+                style="@style/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="نوع پرداخت :"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+            <TextView
+                android:id="@+id/textView11"
+                style="@style/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="نوع ارسال :"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+            <TextView
+                android:id="@+id/textView12"
+                style="@style/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="هزینه کالا :"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+            <TextView
+                android:id="@+id/txt_price_basket"
+                style="@style/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 هزار تومن"
+                app:layout_constraintEnd_toStartOf="@+id/textView12"
+                app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+            <TextView
+                android:id="@+id/textView14"
+                style="@style/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="تخفیف :"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+            <TextView
+                android:id="@+id/txt_off_basket"
+                style="@style/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 هزار تومن"
+                app:layout_constraintEnd_toStartOf="@+id/textView14"
+                app:layout_constraintTop_toBottomOf="@+id/txt_price_basket" />
+
+            <TextView
+                android:id="@+id/textView16"
+                style="@style/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="هزینه ارسال :"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+            <TextView
+                android:id="@+id/textView17"
+                style="@style/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20000"
+                app:layout_constraintEnd_toStartOf="@+id/textView16"
+                app:layout_constraintTop_toBottomOf="@+id/txt_off_basket" />
+
+            <TextView
+                android:id="@+id/textView18"
+                style="@style/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="مجموع :"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+            <TextView
+                android:id="@+id/txt_sum_basket"
+                style="@style/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 هزار تومن"
+                app:layout_constraintEnd_toStartOf="@+id/textView18"
+                app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+            <Button
+                android:id="@+id/button_save_basket"
+                android:layout_width="@dimen/_100mdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12mdp"
+                android:layout_marginBottom="@dimen/_8mdp"
+                android:background="@drawable/back_item_app"
+                android:fontFamily="@font/ordibehesht"
+                android:text="تکمیل  فرآیند"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16font_mdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView18" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

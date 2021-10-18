@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/frHomePage" android:icon="@drawable/home_check" android:title="" />
+<item android:id="@+id/frGroup" android:icon="@drawable/gruop_check" android:title=""/>
+<item android:id="@+id/frBasket" android:icon="@drawable/basket_check" android:title=""/>
+<item android:id="@+id/frProfile" android:icon="@drawable/profile_check" android:title=""/>
+</menu>

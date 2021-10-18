@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.FrHarim"
+    android:background="@color/white">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_8mdp"
+        android:layout_marginLeft="@dimen/_8mdp"
+        android:layout_marginTop="@dimen/_77mdp"
+        android:fontFamily="@font/ordibehesht"
+        android:padding="@dimen/_4mdp"
+        android:text="حریم خصوصی  کفش آپ با تاکید بر احترامی که برای حریم شخصی کاربران قائل است، برای خرید، ثبت نظر یا استفاده از برخی امکانات وب‌سایت اطلاعاتی را از کاربران درخواست می‌کند تا بتواند خدماتی امن و مطمئن را به کاربران ارائه دهد. برای پردازش و ارسال سفارش، اطلاعاتی مانند آدرس، شماره تلفن و ایمیل مورد نیاز است و از آنجا که کلیه فعالیت‌های دیجی‌کالا قانونی و مبتنی بر قوانین تجارت الکترونیک صورت می‌گیرد و طی فرایند خرید، فاکتور رسمی و بنا به درخواست مشتریان حقوقی گواهی ارزش افزوده صادر می‌شود، از این رو وارد کردن اطلاعاتی مانند نام و کد ملی برای اشخاص حقیقی یا کد اقتصادی و شناسه ملی برای خریدهای سازمانی لازم است. یادآوری می‌شود آدرس ایمیل و تلفن‌هایی که مشتری در پروفایل خود ثبت می‌کند، تنها آدرس ایمیل و تلفن‌های رسمی و مورد تایید مشتری است و تمام مکاتبات و پاسخ‌های شرکت از طریق آنها صورت می‌گیرد.  بنابراین درج آدرس، ایمیل و شماره تماس‌های همراه و ثابت توسط مشتری، به منزله مورد تایید بودن صحت آنها است و در صورتی که موارد فوق به صورت صحیح یا کامل درج نشده باشد، کفش آپ جهت اطمینان از صحت و قطعیت ثبت سفارش می‌تواند از مشتری، اطلاعات تکمیلی و بیشتری درخواست کند.  مشتریان می‌توانند نام، آدرس و تلفن شخص دیگری را برای تحویل گرفتن سفارش وارد کنند و کفش آپ تنها برای ارسال همان سفارش، از این اطلاعات استفاده خواهد کرد.  همچنین کفش آپ با نصب و یا استفاده از اپلیکشن با اخذ اجازه از کاربر اطلاعات زیر را به صورت ناشناس از کاربر اخذ می کند. این اطلاعات در حد ضرورت و متناسب با مقاصدی از جمله مطالعه علت گزارش خطا و بهبود اشکالات سیستمی و تجربه کاربری در هنگام استفاده از وبسایت و اپلیکیشن کفش آپ و نیز تحقیقات بازاریابی و ارائه خدمات و پیشنهادات خرید مرتبط تر به کاربران جمع آوری می شود و به نحوی مورد استفاده قرار می‌گیرند که به طور مستقیم به یک شخص حقیقی مشخص و معین مرتبط نباشند"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

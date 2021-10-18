@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navi"
+    app:startDestination="@id/frHomePage">
+
+    <fragment
+        android:id="@+id/frHomePage"
+        android:name="com.example.kafshapp.view.FrHomePage"
+        android:label="fragment_fr_home_page"
+        tools:layout="@layout/fragment_fr_home_page" >
+        <action
+            android:id="@+id/action_frHomePage_to_frGroup"
+            app:destination="@id/frGroup" />
+        <action
+            android:id="@+id/action_frHomePage_to_navigation22"
+            app:destination="@id/navigation2" />
+        <action
+            android:id="@+id/action_frHomePage_to_frItemSelected"
+            app:destination="@id/frItemSelected" />
+    </fragment>
+    <fragment
+        android:id="@+id/frGroup"
+        android:name="com.example.kafshapp.view.FrGroup"
+        android:label="fragment_fr_group"
+        tools:layout="@layout/fragment_fr_group" >
+        <action
+            android:id="@+id/action_frGroup_to_frBasket"
+            app:destination="@id/frBasket" />
+        <action
+            android:id="@+id/action_frGroup_to_frHomePage"
+            app:destination="@id/frHomePage" />
+        <action
+            android:id="@+id/action_frGroup_to_frItemSelected"
+            app:destination="@id/frItemSelected" />
+        <action
+            android:id="@+id/action_frGroup_to_frAllGroup"
+            app:destination="@id/frAllGroup" />
+    </fragment>
+    <fragment
+        android:id="@+id/frBasket"
+        android:name="com.example.kafshapp.view.FrBasket"
+        android:label="fragment_fr_basket"
+        tools:layout="@layout/fragment_fr_basket" >
+        <action
+            android:id="@+id/action_frBasket_to_frProfile"
+            app:destination="@id/frProfile" />
+        <action
+            android:id="@+id/action_frBasket_to_frGroup"
+            app:destination="@id/frGroup" />
+    </fragment>
+    <fragment
+        android:id="@+id/frProfile"
+        android:name="com.example.kafshapp.view.FrProfile"
+        android:label="fragment_fr_profile"
+        tools:layout="@layout/fragment_fr_profile" >
+        <action
+            android:id="@+id/action_frProfile_to_frBasket"
+            app:destination="@id/frBasket" />
+        <action
+            android:id="@+id/action_frProfile_to_navigation2"
+            app:destination="@id/navigation2" />
+    </fragment>
+    <navigation android:id="@+id/navigation2"
+        app:startDestination="@id/frLogIn">
+        <fragment
+            android:id="@+id/frSingUp"
+            android:name="com.example.kafshapp.view.FrSingUp"
+            android:label="fragment_fr_sing_up"
+            tools:layout="@layout/fragment_fr_sing_up" >
+            <action
+                android:id="@+id/action_frSingUp_to_frLogIn"
+                app:destination="@id/frLogIn" />
+            <action
+                android:id="@+id/action_frSingUp_to_frHomePage"
+                app:destination="@id/frHomePage" />
+        </fragment>
+        <fragment
+            android:id="@+id/frLogIn"
+            android:name="com.example.kafshapp.view.FrLogIn"
+            android:label="fragment_fr_log_in"
+            tools:layout="@layout/fragment_fr_log_in" >
+            <action
+                android:id="@+id/action_frLogIn_to_frSingUp"
+                app:destination="@id/frSingUp" />
+            <action
+                android:id="@+id/action_frLogIn_to_frHomePage"
+                app:destination="@id/frHomePage" />
+        </fragment>
+        <action
+            android:id="@+id/action_global_frHomePage"
+            app:destination="@id/frHomePage" />
+    </navigation>
+    <fragment
+        android:id="@+id/frItemSelected"
+        android:name="com.example.kafshapp.view.FrItemSelected"
+        android:label="fragment_fr_item_selected"
+        tools:layout="@layout/fragment_fr_item_selected" >
+        <action
+            android:id="@+id/action_frItemSelected_to_frComment"
+            app:destination="@id/frComment" />
+    </fragment>
+    <fragment
+        android:id="@+id/frAllGroup"
+        android:name="com.example.kafshapp.view.FrAllGroup"
+        android:label="fragment_fr_all_group"
+        tools:layout="@layout/fragment_fr_all_group" />
+    <fragment
+        android:id="@+id/frComment"
+        android:name="com.example.kafshapp.view.FrComment"
+        android:label="fragment_fr_comment"
+        tools:layout="@layout/fragment_fr_comment" >
+        <action
+            android:id="@+id/action_frComment_to_frHomePage"
+            app:destination="@id/frHomePage" />
+    </fragment>
+</navigation>

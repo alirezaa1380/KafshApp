@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.FrSetting"
+ >
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40mdp"
+        android:layout_margin="@dimen/_8mdp"
+        android:background="@drawable/back_item_app"
+        android:fontFamily="@font/ordibehesht"
+        android:gravity="center"
+        android:text="تنظیمات"
+        android:textColor="#000000"
+        android:textSize="@dimen/_20font_mdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30mdp"
+        android:layout_marginLeft="@dimen/_8mdp"
+        android:layout_marginTop="@dimen/_16mdp"
+        android:layout_marginRight="@dimen/_8mdp"
+        app:cardCornerRadius="@dimen/_5mdp"
+        app:cardElevation="@dimen/_5mdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" >
+
+        <TextView
+            android:id="@+id/textView20"
+            style="@style/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="حریم خصوصی" />
+
+        <TextView
+            android:id="@+id/txt_view_harim"
+            style="@style/button_txt"
+            android:layout_height="wrap_content"
+            android:text="مشاهده" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30mdp"
+        android:layout_margin="@dimen/_8mdp"
+        app:cardCornerRadius="@dimen/_5mdp"
+        app:cardElevation="@dimen/_5mdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" >
+
+        <TextView
+            android:id="@+id/textView21"
+            style="@style/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="خروج از حساب کاربری" />
+
+        <TextView
+            android:id="@+id/txt_exit"
+            style="@style/button_txt"
+            android:layout_height="wrap_content"
+            android:text="خروج" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

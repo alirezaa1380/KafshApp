@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.FrProfile"
+    android:id="@+id/conss">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView9"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_75mdp"
+        app:cardElevation="@dimen/_5mdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imv_nottification"
+            android:layout_width="@dimen/_40mdp"
+            android:layout_height="@dimen/_40mdp"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="@dimen/_8mdp"
+            android:src="@drawable/notification_profile" />
+
+        <ImageView
+            android:id="@+id/imv_setting"
+            android:layout_width="@dimen/_40mdp"
+            android:layout_height="@dimen/_40mdp"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="@dimen/_8mdp"
+            android:src="@drawable/setting_profile" />
+
+        <TextView
+            android:id="@+id/textViewNameProfile"
+            android:layout_width="@dimen/_100mdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/back_button_login"
+            android:fontFamily="@font/ordibehesht"
+            android:gravity="center"
+            android:text="سید علیرضا مدنی"
+            android:textColor="#000000"
+            android:textSize="@dimen/_14font_mdp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/cardView9"
+        tools:layout_editor_absoluteX="171dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

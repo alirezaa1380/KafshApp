@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.FrAcount">
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40mdp"
+        android:layout_margin="@dimen/_8mdp"
+        android:background="@drawable/back_item_app"
+        android:fontFamily="@font/ordibehesht"
+        android:gravity="center"
+        android:text="حساب کاربری"
+        android:textColor="#000000"
+        android:textSize="@dimen/_20font_mdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30mdp"
+        android:layout_marginLeft="@dimen/_8mdp"
+        android:layout_marginTop="@dimen/_16mdp"
+        android:layout_marginRight="@dimen/_8mdp"
+        app:cardCornerRadius="@dimen/_5mdp"
+        app:cardElevation="@dimen/_5mdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView30"
+                style="@style/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="نام کاربری :"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_name_account"
+                style="@style/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="خالی"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView30"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/btn_cheng_name_account"
+                style="@style/button_txt"
+                android:layout_height="wrap_content"
+                android:text="تغییر"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/edt_name_account"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8mdp"
+                android:layout_marginRight="@dimen/_4mdp"
+                android:background="@drawable/back_item_app"
+                android:ems="10"
+                android:fontFamily="@font/ordibehesht"
+                android:hint="نام کاربری "
+                android:inputType="textPersonName"
+                android:paddingLeft="@dimen/_4mdp"
+                android:paddingRight="@dimen/_4mdp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView30"
+                app:layout_constraintStart_toEndOf="@+id/btn_cheng_name_account"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/btn_save_name_account"
+                style="@style/button_txt"
+                android:layout_height="wrap_content"
+                android:text="ثبت"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView6"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30mdp"
+        android:layout_marginLeft="@dimen/_8mdp"
+        android:layout_marginRight="@dimen/_8mdp"
+        app:cardCornerRadius="@dimen/_5mdp"
+        app:cardElevation="@dimen/_5mdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_8mdp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView5" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView31"
+                style="@style/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="شماره تلفن :"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/txt_phone_account"
+                style="@style/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="خالی"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView31"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/btn_cheng_phone_account"
+                style="@style/button_txt"
+                android:layout_height="wrap_content"
+                android:text="تغییر"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/edt_phone_account"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8mdp"
+                android:layout_marginRight="@dimen/_4mdp"
+                android:background="@drawable/back_item_app"
+                android:ems="10"
+                android:fontFamily="@font/ordibehesht"
+                android:hint="شماره تلفن"
+                android:inputType="number"
+                android:paddingLeft="@dimen/_4mdp"
+                android:paddingRight="@dimen/_4mdp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView31"
+                app:layout_constraintStart_toEndOf="@+id/btn_cheng_phone_account"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/btn_save_phone_account"
+                style="@style/button_txt"
+                android:layout_height="wrap_content"
+                android:text="ثبت"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView7"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30mdp"
+        android:layout_marginTop="@dimen/_8mdp"
+        android:layout_marginLeft="@dimen/_8mdp"
+        android:layout_marginRight="@dimen/_8mdp"
+        app:cardCornerRadius="@dimen/_5mdp"
+        app:cardElevation="@dimen/_5mdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView6"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/textView32"
+                style="@style/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="آدرس :"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_adress_account"
+                style="@style/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="خالی"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView32"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/btn_cheng_address_account"
+                style="@style/button_txt"
+                android:layout_height="wrap_content"
+                android:text="تغییر"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/edt_address_account"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8mdp"
+                android:layout_marginRight="@dimen/_4mdp"
+                android:background="@drawable/back_item_app"
+                android:ems="10"
+                android:fontFamily="@font/ordibehesht"
+                android:hint="آدرس"
+                android:inputType="textPersonName"
+                android:paddingLeft="@dimen/_4mdp"
+                android:paddingRight="@dimen/_4mdp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView32"
+                app:layout_constraintStart_toEndOf="@+id/btn_cheng_address_account"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+
+                android:id="@+id/btn_save_address_account"
+                style="@style/button_txt"
+                android:layout_height="wrap_content"
+                android:text="ثبت"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
